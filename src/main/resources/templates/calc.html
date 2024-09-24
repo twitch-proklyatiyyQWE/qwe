@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Калькулятор</h1>
+
+    <form action="/calc" method="post">
+        <label for="num1">Число 1:</label>
+        <input type="number" id="num1" name="num1" required>
+
+        <label for="num2">Число 2:</label>
+        <input type="number" id="num2" name="num2" required>
+
+        <label for="operation">Операция:</label>
+        <select name="operation">
+            <option value="add">Сложить</option>
+            <option value="subtract">Вычесть</option>
+            <option value="multiply">Умножить</option>
+            <option value="divide">Разделить</option>
+        </select>
+
+        <input type="submit" value="Вычислить">
+    </form>
+
+    <h2 th:text="'Результат: ' + ${result}"></h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: #000000; /* Черный фон */
+    color: #ffa500; /* Оранжевый текст */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #ffa500; /* Оранжевые заголовки */
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    color: #ffa500;
+}
+
+input, select {
+    background-color: #333333; /* Темные поля ввода */
+    color: #ffa500; /* Оранжевый текст */
+    border: 1px solid #ffa500; /* Оранжевая рамка */
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #ffa500; /* Оранжевая кнопка */
+    color: #000000; /* Черный текст */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff8c00; /* Темнее при наведении */
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Темно-серый фон контейнера */
+    border-radius: 8px;
+}
